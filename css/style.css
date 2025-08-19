@@ -1,0 +1,118 @@
+:root {
+  --verde-genio: hsl(140, 65%, 40%);
+  --dourado-brilhante: hsl(45, 90%, 55%);
+  --roxo-cosmico: hsl(265, 70%, 40%);
+  --azul-real: hsl(220, 60%, 35%);
+  --creme-claro: hsl(42, 40%, 85%);
+  --escuro-estelar: hsl(240, 30%, 10%);
+  --fonte-primaria: 'Petemoss', cursive;
+  --fonte-secundaria: 'Gabarito', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, var(--roxo-cosmico) 0%, var(--escuro-estelar) 100%);
+  color: var(--creme-claro);
+  font-family: var(--fonte-secundaria);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: var(--azul-real);
+  padding: 2rem;
+  text-align: center;
+  color: var(--dourado-brilhante);
+}
+
+h1 {
+  color: var(--dourado-brilhante);
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    color: var(--dourado-brilhante);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: normal;
+}
+
+.img_Lotogenio {
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--escuro-estelar);
+}
+
+.container_Botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.botao {
+  background-color: var(--verde-genio);
+  border: none;
+  border-radius: 5px;
+  color: var(--creme-claro);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--dourado-brilhante);
+  color: var(--escuro-estelar);
+}
+
+section {
+  padding: 2rem;
+  background-color: var(--creme-claro);
+  color: var(--escuro-estelar);
+}
+
+.carregando {
+    margin: 30px 0;
+}
+
+.rodape {
+    color: var(--dourado-brilhante);
+    padding: 0;
+    width: 100vw;
+    bottom: 0.5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--dourado-brilhante);
+    margin: 0;
+    padding: 0;
+}
+
+.assinatura {
+    font-family: var(--fonte-secundaria);
+    font-size: 12px;
+    margin: 2px 10px;
+    text-align: end;
+}

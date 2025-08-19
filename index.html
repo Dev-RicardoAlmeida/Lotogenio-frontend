@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotogenio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Petemoss&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main> 
+        <h1>Lotogenio</h1>
+        <h2>Tente a Sorte</h2>
+        <h3 class="subtitulo">Vou adivinhar os números da Loteria pra você!</h3>
+        <img src="/img/lotogenio-numeros-certos.webp" alt="Gênio da Loteria" class="img_Lotogenio">
+        
+        <div class="container_Botoes">
+            <button class="botao" id="botaoSortearSena" onclick="sortear('sena')">Adivinhar Sena</button>
+            <button class="botao" id="botaoSortearLotoFacil" onclick="sortear('lotofacil')">Adivinhar LotoFácil</button>
+        </div>
+        <div class="carregando" id="loader" style="display:none;">
+            Sorteando números...
+        </div>
+        <div id="resultado" class="resultado">
+            <p id="numeros"></p>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <hr>
+        <p class="assinatura">Desenvolvido por Ricardo Almeida</p>
+    </footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
