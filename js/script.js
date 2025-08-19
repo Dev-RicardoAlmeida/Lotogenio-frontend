@@ -11,9 +11,9 @@ function sortear(tipo) {
 
     const start = Date.now();
 	
-	console.log(`https://lotogenio-backend.onrender.com/Servlet?tipo=${tipo}`);
+	console.log(`Servlet?tipo=${tipo}`);
 
-    fetch(`Servlet?tipo=${tipo}`)
+    fetch(`https://lotogenio-backend.onrender.com/Servlet?tipo=${tipo}`)
         .then(response => response.json())
         .then(data => {
             const elapsed = Date.now() - start;
