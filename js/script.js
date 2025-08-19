@@ -11,7 +11,7 @@ function sortear(tipo) {
 
     const start = Date.now();
 	
-	console.log(`Servlet?tipo=${tipo}`);
+	console.log(`https://lotogenio-backend.onrender.com/Servlet?tipo=${tipo}`);
 
     fetch(`Servlet?tipo=${tipo}`)
         .then(response => response.json())
